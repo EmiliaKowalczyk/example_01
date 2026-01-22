@@ -9,14 +9,14 @@ def multiply(a, b, c):
 # TODO: example with args and kwargs
 
 def main(a, b):
-    print(f'multiplication: 3 + 3 = {multiply(a, b,c)}')
-    print(f'Sum: 3 + 3 = {sum(a, b)}')
+    print(f'multiplication: {a} * {b} = {multiply(a, b)}')
+    print(f'Sum: {a} + {b} = {sum(a, b)}')
 
-if __name__ == '__main__':
-    try:
-        a, b, c = '3', 3, 4
-        main(a, b, c)
-    except TypeError as err:
-        print(err)
-        a, b, c = 3, 3, 4
-        main(a, b, c)
+
+try:
+    a, b = '3', 3
+    main(a, b)
+except TypeError as err:
+    print(err)
+    a, b = 3, 3
+    main(a, b)
