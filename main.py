@@ -2,8 +2,8 @@ def sum(a, b):
     return a + b
 
 
-def multiply(a, b):
-    return a * b
+def multiply(a, b, c):
+    return a * b * c
 
 
 # TODO: example with args and kwargs
